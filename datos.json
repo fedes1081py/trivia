@@ -1,0 +1,158 @@
+{
+    "Ciencia": [
+        {
+            "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+            "opciones": ["Tierra", "Marte", "Júpiter", "Saturno"],
+            "respuesta": "Júpiter"
+        },
+        {
+            "pregunta": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+            "opciones": ["206", "195", "220", "180"],
+            "respuesta": "206"
+        },
+        {
+            "pregunta": "¿Cuál es el símbolo químico del oro?",
+            "opciones": ["Go", "Ag", "Au", "Or"],
+            "respuesta": "Au"
+        },
+        {
+            "pregunta": "¿A qué velocidad viaja la luz en el vacío?",
+            "opciones": ["300.000 km/s", "150.000 km/s", "450.000 km/s", "200.000 km/s"],
+            "respuesta": "300.000 km/s"
+        },
+        {
+            "pregunta": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+            "opciones": ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Hidrógeno"],
+            "respuesta": "Nitrógeno"
+        },
+        {
+            "pregunta": "¿Cuántos cromosomas tiene una célula humana normal?",
+            "opciones": ["23", "46", "48", "44"],
+            "respuesta": "46"
+        },
+        {
+            "pregunta": "¿Cuál es el elemento más abundante en el universo?",
+            "opciones": ["Oxígeno", "Carbono", "Hidrógeno", "Helio"],
+            "respuesta": "Hidrógeno"
+        },
+        {
+            "pregunta": "¿Qué órgano produce la insulina?",
+            "opciones": ["Hígado", "Riñón", "Páncreas", "Estómago"],
+            "respuesta": "Páncreas"
+        },
+        {
+            "pregunta": "¿Cuál es la unidad básica de la herencia?",
+            "opciones": ["Célula", "Cromosoma", "Gen", "ADN"],
+            "respuesta": "Gen"
+        },
+        {
+            "pregunta": "¿Qué científico formuló la teoría de la relatividad?",
+            "opciones": ["Newton", "Einstein", "Hawking", "Bohr"],
+            "respuesta": "Einstein"
+        }
+    ],
+    "Historia": [
+        {
+            "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+            "opciones": ["1912", "1914", "1916", "1918"],
+            "respuesta": "1914"
+        },
+        {
+            "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+            "opciones": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "Benjamin Franklin"],
+            "respuesta": "George Washington"
+        },
+        {
+            "pregunta": "¿En qué año cayó el Muro de Berlín?",
+            "opciones": ["1987", "1991", "1989", "1985"],
+            "respuesta": "1989"
+        },
+        {
+            "pregunta": "¿Qué civilización construyó las pirámides de Giza?",
+            "opciones": ["Romana", "Griega", "Egipcia", "Mesopotámica"],
+            "respuesta": "Egipcia"
+        },
+        {
+            "pregunta": "¿En qué año llegó Cristóbal Colón a América?",
+            "opciones": ["1488", "1490", "1494", "1492"],
+            "respuesta": "1492"
+        },
+        {
+            "pregunta": "¿Quién fue Napoleón Bonaparte?",
+            "opciones": ["Rey de España", "Emperador de Francia", "General inglés", "Zar de Rusia"],
+            "respuesta": "Emperador de Francia"
+        },
+        {
+            "pregunta": "¿En qué año terminó la Segunda Guerra Mundial?",
+            "opciones": ["1943", "1944", "1946", "1945"],
+            "respuesta": "1945"
+        },
+        {
+            "pregunta": "¿Qué imperio construyó el Coliseo de Roma?",
+            "opciones": ["Imperio Griego", "Imperio Otomano", "Imperio Romano", "Imperio Bizantino"],
+            "respuesta": "Imperio Romano"
+        },
+        {
+            "pregunta": "¿En qué país se originó la Revolución Industrial?",
+            "opciones": ["Francia", "Alemania", "Estados Unidos", "Inglaterra"],
+            "respuesta": "Inglaterra"
+        },
+        {
+            "pregunta": "¿Quién fue el líder de la Revolución Cubana?",
+            "opciones": ["Che Guevara", "Fidel Castro", "Raúl Castro", "Batista"],
+            "respuesta": "Fidel Castro"
+        }
+    ],
+    "Música": [
+        {
+            "pregunta": "¿Cuántas cuerdas tiene una guitarra estándar?",
+            "opciones": ["4", "5", "6", "7"],
+            "respuesta": "6"
+        },
+        {
+            "pregunta": "¿Qué artista grabó el álbum 'Thriller'?",
+            "opciones": ["The Beatles", "Michael Jackson", "Queen", "Madonna"],
+            "respuesta": "Michael Jackson"
+        },
+        {
+            "pregunta": "¿De qué país es originario el tango?",
+            "opciones": ["Brasil", "España", "Argentina", "Uruguay"],
+            "respuesta": "Argentina"
+        },
+        {
+            "pregunta": "¿Cuántas notas tiene la escala musical estándar?",
+            "opciones": ["5", "6", "8", "7"],
+            "respuesta": "7"
+        },
+        {
+            "pregunta": "¿Qué instrumento toca Elton John?",
+            "opciones": ["Guitarra", "Batería", "Piano", "Bajo"],
+            "respuesta": "Piano"
+        },
+        {
+            "pregunta": "¿Qué banda británica fue conocida como los 'Fab Four'?",
+            "opciones": ["The Rolling Stones", "Led Zeppelin", "The Beatles", "Pink Floyd"],
+            "respuesta": "The Beatles"
+        },
+        {
+            "pregunta": "¿Cómo se llama la ópera más famosa de Mozart?",
+            "opciones": ["La Traviata", "La Flauta Mágica", "Carmen", "Rigoletto"],
+            "respuesta": "La Flauta Mágica"
+        },
+        {
+            "pregunta": "¿Qué significa 'forte' en música?",
+            "opciones": ["Lento", "Rápido", "Fuerte", "Suave"],
+            "respuesta": "Fuerte"
+        },
+        {
+            "pregunta": "¿De qué país es originario el reggae?",
+            "opciones": ["Cuba", "Brasil", "Jamaica", "Trinidad"],
+            "respuesta": "Jamaica"
+        },
+        {
+            "pregunta": "¿Qué compositor alemán compuso la Quinta Sinfonía siendo sordo?",
+            "opciones": ["Bach", "Mozart", "Beethoven", "Brahms"],
+            "respuesta": "Beethoven"
+        }
+    ]
+}
