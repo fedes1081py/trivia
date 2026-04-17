@@ -23,8 +23,9 @@ class Preguntas:
 
     def obtener_tematicas(self):
         if not self.preguntas:
-            return {}
-        return self.preguntas.keys()
+            return []
+        return list(self.preguntas)
+
 
     def generar_preguntas_random(self, tematica):
         #vamos a generar las preguntas random
@@ -36,22 +37,19 @@ class Preguntas:
 
 class Juego:
     def __init__(self,ruta_preguntas):
+        self.usuario = self.validar_nombre()
         self.puntaje = 0
         self.correctas = 0
         self.incorrectas = 0
-        self.usuario = ""
         self.preguntas = Preguntas(ruta_preguntas)
     
     @property
     def puntaje(self):
         return self._puntaje
-    
     @puntaje.setter
     def puntaje(self,puntaje):
-        if puntaje<0:
-            print("Error")
-        else:
-            self._puntaje = puntaje
+        #colocamos un max para que si el numero puntaje es negativo se sume 0
+        self._puntaje = max(0,puntaje)
 
     
     def imprimir_tematicas(self,tematicas):
@@ -95,48 +93,30 @@ class Juego:
             print("Dato invalido,intenta de vuelta")
     
     def empezar(self):
-        self.usuario = self.validar_nombre()
-        while True:
-            tematicas = self.preguntas.obtener_tematicas()
-            tematica_elegida = self.pedir_tematica(tematicas)
-            preguntas_tematica = self.preguntas.generar_preguntas_random(tematica_elegida)
-
-            for pregunta_completa in preguntas_tematica:
-                pregunta = pregunta_completa['pregunta']
-                respuesta = pregunta_completa['respuesta']
-                print(pregunta)
-                ayuda = self.validar_ayuda()
-                if ayuda:
-                    opciones = pregunta_completa['opciones']
-                    self.mostrar_opciones(opciones)
-                es_correcta = self.validar_respuesta(respuesta)
-                self.calcular_puntaje(es_correcta, ayuda)
-            seguir_jugando = self.seguir()
-            if not seguir_jugando:
-                print("Adios ")
-                break
-            
-    def seguir(self):
-        while True:
-            op = input("Queres seguir? ").strip().lower()
-            if op in ('si','no'):
-                return True if op == 'si' else False
-            print("Intenta de vuelta, dato invalido")
-
-
-
+        tematicas = self.preguntas.obtener_tematicas()
+        tematica_elegida = self.pedir_tematica(tematicas)
+        preguntas_tematica = self.preguntas.generar_preguntas_random(tematica_elegida)
+        for pregunta_completa in preguntas_tematica:
+            pregunta = pregunta_completa['pregunta']
+            respuesta = pregunta_completa['respuesta']
+            print(pregunta)
+            ayuda = self.validar_ayuda()
+            if ayuda:
+                opciones = pregunta_completa['opciones']
+                self.mostrar_opciones(opciones)
+            es_correcta = self.validar_respuesta(respuesta)
+            self.calcular_puntaje(es_correcta, ayuda)
+        return self.puntaje,self.usuario
+        
 
     def calcular_puntaje(self,respuesta_correcta, ayuda):
+        if respuesta_correcta and ayuda:
+            self.puntaje +=5
+        elif respuesta_correcta and not ayuda:
+            self.puntaje+=10
         if respuesta_correcta:
-            self.puntaje+=5
             self.correctas+=1
         else:
             self.incorrectas+=1
-        if ayuda:
-            self.puntaje+=5
-
-
-
-
 
 
