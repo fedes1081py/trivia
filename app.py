@@ -23,7 +23,7 @@ class Preguntas:
 
     def obtener_tematicas(self):
         if not self.preguntas:
-            return []
+            return {}
         return self.preguntas.keys()
 
     def generar_preguntas_random(self, tematica):
@@ -61,8 +61,8 @@ class Juego:
     def pedir_tematica(self,tematicas):
         while True:
             self.imprimir_tematicas(tematicas)
-            op = input("Decime la tematica que quieres: ").capitalize()
-            if op.strip() in tematicas:
+            op = input("Decime la tematica que quieres: ").strip().capitalize()
+            if op in tematicas:
                 return op
             print("Dato invalido, intenta de vuelta")
                 
@@ -119,20 +119,21 @@ class Juego:
     def seguir(self):
         while True:
             op = input("Queres seguir? ").strip().lower()
-            if not op in ('si','no'):
-                print("Intenta de vuelta, dato invalido")
-            return True if op == 'si' else False
+            if op in ('si','no'):
+                return True if op == 'si' else False
+            print("Intenta de vuelta, dato invalido")
 
 
 
 
     def calcular_puntaje(self,respuesta_correcta, ayuda):
-        if respuesta_correcta and ayuda:
-            self.puntaje += 5
-        elif respuesta_correcta and not ayuda:
-            self.puntaje +=10
+        if respuesta_correcta:
+            self.puntaje+=5
+            self.correctas+=1
         else:
-            pass
+            self.incorrectas+=1
+        if ayuda:
+            self.puntaje+=5
 
 
 
