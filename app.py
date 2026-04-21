@@ -119,4 +119,26 @@ class Juego:
         else:
             self.incorrectas+=1
 
+class Historial:
+    def __init__(self,ruta_historial):
+        self.historial_cargado = self.cargar_historial(ruta_historial)
+    
+    def cargar_historial(self):
+        with open(ruta_historial,'r',encoding='utf-8') as file:
+            return pd.read_csv(file)
 
+    
+    def validar_nombre(self,nombre):
+        pass
+
+
+
+
+class PrintErr(Exception):
+    def __init__(self,msg):
+        super().__init__(msg)
+
+    
+
+    
+    
